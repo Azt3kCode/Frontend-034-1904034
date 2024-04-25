@@ -1,5 +1,6 @@
 const carros = [
     {
+        id: 1,
         marca: 'Seat',
         modelo: 'Fr',
         anio: 2018,
@@ -10,6 +11,7 @@ const carros = [
         }
     },
     {
+        id: 2,
         marca: 'Toyota',
         modelo: 'Corolla',
         anio: 2019,
@@ -20,6 +22,7 @@ const carros = [
         }
     },
     {
+        id: 3,
         marca: 'Ford',
         modelo: 'Fiesta',
         anio: 2020,
@@ -30,6 +33,7 @@ const carros = [
         }
     },
     {
+        id: 4,
         marca: 'Honda',
         modelo: 'Civic',
         anio: 2017,
@@ -40,6 +44,7 @@ const carros = [
         }
     },
     {
+        id: 5,
         marca: 'Volkswagen',
         modelo: 'Golf',
         anio: 2016,
@@ -50,6 +55,7 @@ const carros = [
         }
     },
     {
+        id: 6,
         marca: 'Chevrolet',
         modelo: 'Camaro',
         anio: 2021,
@@ -65,7 +71,12 @@ const carroPorNombre = (nombreCliente) => {
     return carros.find(i => i.client.name === nombreCliente);
 }
 
+const carroPorId = () => {
+    return carros.filter(i => i.id !== 1); 
+}
+
 export {
     carros,
-    carroPorNombre
+    carroPorNombre,
+    carroPorId
 }
