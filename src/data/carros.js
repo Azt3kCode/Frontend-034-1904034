@@ -75,8 +75,25 @@ const carroPorId = () => {
     return carros.filter(i => i.id !== 1); 
 }
 
+const findCarById = (id) => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const test = carroPorId(2);
+            
+            if (test) {
+                resolve(test);
+            } else {
+                reject('Error> No se encontró el carro');
+            }
+        }, 3000);
+    });
+
+    return promise;
+}
+
 export {
     carros,
     carroPorNombre,
-    carroPorId
+    carroPorId,
+    findCarById
 }
