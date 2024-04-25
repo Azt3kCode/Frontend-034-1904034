@@ -1,6 +1,15 @@
-// console.log("Hola Mundo")
+let firstname = 'Trejo';
 
-// var name = "Alexis"
-let name = "Alexis"
-name = "Eduardo"
-console.log("Hola " + name)
+firstname = 'Alexis';
+
+const lastname = 'Trejo';
+
+const condition = true;
+
+if (condition) {
+    const lastname = "Hyper";
+    console.log(lastname);
+}
+
+console.log(`Hola Mundo!!! 
+${firstname} - ${lastname}`);
